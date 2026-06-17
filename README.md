@@ -136,8 +136,7 @@ HOM  -> 1/1
 HEMI -> 1
 ```
 
-The Excel `AD` column is treated as alternate allele depth. The VCF sample `AD`
-field is computed as `ref_depth,alt_depth` using `DP - AD`.
+The Excel `AD` column is treated as alternate allele depth. The VCF sample `AD` field is computed as `ref_depth,alt_depth` using `DP - AD`.
 
 ## Validate the output VCF
 

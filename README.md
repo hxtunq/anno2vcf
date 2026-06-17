@@ -1,6 +1,6 @@
 # anno2vcf
 
-Convert ANNOVAR multianno Excel workbooks to VCF (Variant Call Format) from the command line.
+Convert ANNOVAR multianno Excel workbooks to Variant Call Format file (VCF) from the command line.
 
 (useful for those moments when the original VCF mysteriously disappears)
 

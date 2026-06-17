@@ -2,7 +2,7 @@
 
 Convert ANNOVAR multianno Excel workbooks to VCF (Variant Call Format) from the command line.
 
-(sometimes the original VCF mysteriously disappears)
+(useful for those moments when the original VCF mysteriously disappears)
 
 This tool is designed for Excel VCF's annotation files with columns such as:
 
@@ -10,8 +10,7 @@ This tool is designed for Excel VCF's annotation files with columns such as:
 #CHROM  POS  REF  ALT  DP  AD  QUAL  MQ  Zygosity  FILTER  Effect  Putative_Impact ...
 ```
 
-It has no third-party Python dependencies. It reads `.xlsx` files directly using
-Python's standard library.
+It has no third-party Python dependencies. It reads `.xlsx` files directly using Python's standard library.
 
 ## Windows CMD: Download ZIP, No Git Required
 

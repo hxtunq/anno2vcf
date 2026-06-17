@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "anno2vcf"
+version = "0.1.0"
+description = "Convert ANNO Excel workbooks to VCF."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+keywords = ["bioinformatics", "vcf", "excel", "variant", "annotation"]
+dependencies = []
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+
+[project.scripts]
+anno2vcf = "anno_excel_to_vcf:main"
+
+[project.urls]
+Homepage = "https://github.com/hxtunq/anno2vcf"
+Issues = "https://github.com/hxtunq/anno2vcf/issues"
+
+[tool.setuptools]
+py-modules = ["anno_excel_to_vcf"]

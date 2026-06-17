@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Generated or sensitive bioinformatics data.
+*.vcf
+*.vcf.gz
+*.tbi
+*.csi
+*.xlsx
+!examples/*.xlsx

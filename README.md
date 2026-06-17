@@ -85,23 +85,6 @@ Then run:
 anno2vcf input_ANNO.xlsx -o output.vcf
 ```
 
-## Use Without Installing
-
-Clone or download this repository, then run:
-
-```bash
-python3 anno2vcf.py examples/simple_ANNO.xlsx -o simple.vcf
-```
-
-On Windows:
-
-```bat
-py anno2vcf.py examples\simple_ANNO.xlsx -o simple.vcf
-```
-
-The repository includes `examples/simple_ANNO.xlsx`, a small synthetic workbook
-with one `SNP_Indel_ANNO` sheet. Use it for testing only.
-
 ## Common Commands
 
 List sheets:
@@ -159,28 +142,3 @@ HEMI -> 1
 
 The Excel `AD` column is treated as alternate allele depth. The VCF sample `AD`
 field is computed as `ref_depth,alt_depth` using `DP - AD`.
-
-## Filter Examples With bcftools
-
-Get variants with moderate impact:
-
-```bash
-bcftools view -i 'INFO/IMPACT="MODERATE"' simple.vcf > moderate.vcf
-```
-
-Get variants with moderate or high impact:
-
-```bash
-bcftools view -i 'INFO/IMPACT="MODERATE" || INFO/IMPACT="HIGH"' simple.vcf > moderate_high.vcf
-```
-
-Get a specific genomic position:
-
-```bash
-bcftools view -i 'CHROM="chr1" && POS=12345' simple.vcf
-```
-
-## Privacy Note
-
-Do not commit real patient Excel or VCF files to a public GitHub repository.
-Use small synthetic examples for testing and documentation.

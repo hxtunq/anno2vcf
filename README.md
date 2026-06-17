@@ -1,8 +1,9 @@
 # anno2vcf
 
-Convert ANNO Excel workbooks to VCF from the command line.
+Convert ANNOVAR multianno Excel workbooks to VCF (Variant Call Format) from the command line.
+(sometimes the original VCF mysteriously disappears)
 
-This tool is designed for Excel annotation files with columns such as:
+This tool is designed for Excel VCF's annotation files with columns such as:
 
 ```text
 #CHROM  POS  REF  ALT  DP  AD  QUAL  MQ  Zygosity  FILTER  Effect  Putative_Impact ...

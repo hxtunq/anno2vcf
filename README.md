@@ -10,9 +10,7 @@ This tool is designed for Excel VCF's annotation files with columns such as:
 #CHROM  POS  REF  ALT  DP  AD  QUAL  MQ  Zygosity  FILTER  Effect  Putative_Impact ...
 ```
 
-It has no third-party Python dependencies. It reads `.xlsx` files directly using Python's standard library.
-
-## Windows CMD: Download ZIP, No Git Required
+## Windows CMD
 
 1. Download this repository as a ZIP file from GitHub.
 2. Extract the ZIP.
@@ -22,8 +20,6 @@ It has no third-party Python dependencies. It reads `.xlsx` files directly using
 ```bat
 anno2vcf.bat examples\simple_ANNO.xlsx -o simple.vcf
 ```
-
-This mode does not install anything. It only requires Python 3.9 or newer.
 
 To install the command globally from the extracted folder:
 
@@ -39,10 +35,9 @@ anno2vcf input_ANNO.xlsx -o output.vcf
 
 If `anno2vcf` is not recognized after installation, close and reopen `cmd`.
 
-## Windows CMD: Install From GitHub
+## Install on Window CMD From GitHub
 
-Install Python 3.9 or newer first. On Windows, select **Add python.exe to PATH**
-during installation.
+Install Python 3.9 or newer first. On Windows, select **Add python.exe to PATH** during installation.
 
 If Git is installed, install directly from GitHub:
 

@@ -144,7 +144,7 @@ HEMI -> 1
 The Excel `AD` column is treated as alternate allele depth. The VCF sample `AD`
 field is computed as `ref_depth,alt_depth` using `DP - AD`.
 
-## Output Check
+## Validate the output VCF
 
 Use `PowerShell` in `cmd` to quickly inspect the converted VCF file and preview the first 10 non-header variant records.
 
